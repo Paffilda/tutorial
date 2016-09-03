@@ -296,7 +296,7 @@ Pokud se ti zobrazí chyba při pokusu navštívit web, první místo kam se pod
 
  [8]: https://www.pythonanywhere.com/web_app_setup/
 
-*   Často zapomínané kroky jsou ty, které jsme dělali v konzoly: vytvoření virtualenv, aktivace, instalace Django, spuštění collectstatic, přenesení databáze.
+*   Často zapomínané kroky jsou ty, které jsme dělali v konzoli: vytvoření virtualenv, aktivace, instalace Django, spuštění collectstatic, přenesení databáze.
 
 *   Chyba k cestě virtualenv na kartě Web – bude obvykle označená malou červenou zprávou na stejném místě.
 
