@@ -92,7 +92,7 @@ Hurá! Chceš se podívat jestli to fungovalo?
 
 ```
     >>> Post.objects.all()
-    [<Post: my post title>, <Post: another post title>, <Post: Sample title>]
+    [<Post: my post title>, <Post: another post title>, <Post: titulek>]
 ```  
 
 A je to tu, další příspěvek v seznamu!
@@ -126,7 +126,7 @@ Také můžeš získat seznam všech publikovaných příspěvků. Uděláme to 
 Bohužel, příspěvek který jsme přidali pomocí Python konzole ještě není publikován. To můžeme změnit! Nejdřív vezmeme instanci příspěvku, který chceme publikovat:
 
 ```
-    >>> post = Post.objects.get(title="Sample title")
+    >>> post = Post.objects.get(title="titulek")
 ```  
 
 A ten publikujeme pomocí naší metody `publish`!
@@ -139,7 +139,7 @@ Teď se znovu pokus získat seznam publikovaných příspěvků (3 krát zmáčk
 
 ```
     >>> Post.objects.filter(published_date__lte=timezone.now())
-    [<Post: Sample title>]
+    [<Post: titulek>]
 ```  
 
 ### Řazení objektů
