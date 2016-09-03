@@ -103,10 +103,10 @@ Teď si můžeš trochu pohrát a přidat více příspěvků, abys viděla jak 
 
 ### Filtrování objektů
 
-Důležitá součást QuerySetů je možnost je filtrovat. Řekněme, že chceme najít všechny příspěvky jejichž autorem je uživatel (user) ola. V `Post.objects.all()` použijeme `filter` místo `all`. V závorkách stanovíme podmínky, které musí příspěvek splňovat, aby skončil v našem querysetu. V našem případě je to, že `author` se rovná `ja`. Způsob, jakým se to v Django zapisuje je: `author=ja`. Teď náš kus kódu vypadá takhle:
+Důležitá součást QuerySetů je možnost je filtrovat. Řekněme, že chceme najít všechny příspěvky jejichž autorem je uživatel (user) ola. V `Post.objects.all()` použijeme `filter` místo `all`. V závorkách stanovíme podmínky, které musí příspěvek splňovat, aby skončil v našem querysetu. V našem případě je to, že `author` se rovná `me`. Způsob, jakým se to v Django zapisuje je: `author=me`. Teď náš kus kódu vypadá takhle:
 
 ```
-    >>> Post.objects.filter(author=ja)
+    >>> Post.objects.filter(author=me)
     [<Post: titulek>, <Post: Příspěvek číslo 2>, <Post: Můj 3. příspěvek!>, <Post: 4. titulek příspěvku>]
 ```  
 
